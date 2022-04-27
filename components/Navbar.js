@@ -7,10 +7,10 @@ const Navbar = () => {
   const router = useRouter()
   return (
     <div>
-      <nav class="flex flex-wrap items-center justify-between bg-yellow-300 p-6">
-        <div class="mr-6 flex flex-shrink-0 items-center text-black">
+      <nav className="flex flex-wrap items-center justify-between bg-yellow-300 p-6">
+        <div className="mr-6 flex flex-shrink-0 items-center text-black">
           <svg
-            class="mr-2 h-8 w-8 fill-current"
+            className="mr-2 h-8 w-8 fill-current"
             width="54"
             height="54"
             viewBox="0 0 54 54"
@@ -18,15 +18,15 @@ const Navbar = () => {
           >
             <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
           </svg>
-          <span class="text-xl font-semibold tracking-tight">Black Spoon</span>
+          <span className="text-xl font-semibold tracking-tight">Black Spoon</span>
         </div>
-        <div class="block sm:hidden">
+        <div className="block sm:hidden">
           <button
             onClick={() => setNav(!nav)}
-            class="flex items-center rounded border border-teal-400 px-3 py-2 text-teal-200 hover:border-white hover:text-white"
+            className="flex items-center rounded border border-teal-400 px-3 py-2 text-teal-200 hover:border-white hover:text-white"
           >
             <svg
-              class="h-3 w-3 fill-current"
+              className="h-3 w-3 fill-current"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -35,12 +35,12 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div class="flex flex-wrap items-center justify-between w-full flex-grow sm:flex sm:w-auto sm:items-center">
+        <div className="flex flex-wrap items-center justify-between w-full flex-grow sm:flex sm:w-auto sm:items-center">
           
           <div className={`${nav ? '' : 'hidden'} text-gray-400 sm:block`}>
             <Link href="/">
               <a
-                class={`${
+                className={`${
                   router.asPath === '/home' ? 'text-gray-800 ' : ''
                 } mt-4 mr-4 block hover:text-gray-900  sm:inline-block md:mt-0`}
               >
@@ -50,17 +50,17 @@ const Navbar = () => {
             <Link href="/contact">
               <a
                 href="/contact"
-                class={`${
+                className={`${
                   router.asPath === '/contact' ? 'text-gray-800 ' : ''
                 } mt-4 mr-4 block hover:text-gray-900  sm:inline-block md:mt-0`}
               >
-                Contact Us
+                Notify Us
               </a>
             </Link>
             <Link href="/order">
               <a
                 href="/order"
-                class={`${
+                className={`${
                   router.asPath === '/order' ? 'text-gray-800 ' : ''
                 } mt-4 mr-4 block hover:text-gray-900  sm:inline-block md:mt-0`}
               >
