@@ -35,8 +35,8 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div class="block w-full flex-grow sm:flex sm:w-auto sm:items-center">
-          <div class="text-sm sm:flex-grow"></div>
+        <div class="flex flex-wrap items-center justify-between w-full flex-grow sm:flex sm:w-auto sm:items-center">
+          
           <div className={`${nav ? '' : 'hidden'} text-gray-400 sm:block`}>
             <Link href="/">
               <a
